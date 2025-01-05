@@ -54,4 +54,4 @@ jobs:
         run: terraform init -backend=false
 
       - name: Terraform Validate
-        run: terraform validate 
+        run: terraform validate

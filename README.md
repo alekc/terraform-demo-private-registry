@@ -1,4 +1,4 @@
-# Random Pet Names Terraform Module
+# Random Pet Names Terraform Module,
 
 This module generates random pet names using the `random_pet` resource.
 
@@ -21,4 +21,4 @@ This module generates random pet names using the `random_pet` resource.
 |------|-------------|
 | pet_names | List of generated pet names |
 
-## Example Usage 
+## Example Usage
