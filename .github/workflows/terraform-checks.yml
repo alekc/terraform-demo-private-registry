@@ -43,6 +43,16 @@ jobs:
           chmod +x terraform-docs
           sudo mv terraform-docs /usr/local/bin/
 
+      - name: Debug Environment
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Terraform-docs version:"
+          terraform-docs version
+          echo "Terraform-docs config:"
+          cat .terraform-docs.yml
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
@@ -55,9 +65,13 @@ jobs:
 
       - name: Run pre-commit with debug
         run: |
+          # Force terraform-docs to use the current directory
+          export TERRAFORM_DOCS_PATH=$(pwd)
           pre-commit run terraform_docs --all-files || {
             echo "terraform-docs made changes. Showing diff:"
             git diff
+            echo "Generated README content:"
+            cat README.md
             exit 1
           }
 
