@@ -1,0 +1,7 @@
+.
+├── .pre-commit-config.yaml
+├── .gitignore
+├── main.tf
+├── variables.tf
+├── outputs.tf
+└── README.md 
