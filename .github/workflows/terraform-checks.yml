@@ -28,7 +28,7 @@ jobs:
           echo "Directory contents:"
           ls -la
           echo "Git diff:"
-          git diff 
+          git diff
           echo "######"
           cat README.md
 
@@ -61,7 +61,7 @@ jobs:
 
       - name: Install pre-commit
         run: |
-          python -m pip install --upgrade pip   
+          python -m pip install --upgrade pip
           pip install pre-commit
 
       - name: Debug Environment
