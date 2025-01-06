@@ -7,4 +7,4 @@ variable "number_of_pets" {
     condition     = var.number_of_pets > 0
     error_message = "Number of pets must be greater than 0"
   }
-} 
+}

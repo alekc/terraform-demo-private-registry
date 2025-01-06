@@ -6,10 +6,11 @@ repos:
       - id: terraform_docs
       - id: terraform_tflint
       - id: terraform_validate
+      - id: terraform_trivy
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: check-merge-conflict
       - id: end-of-file-fixer
       - id: trailing-whitespace
-      - id: check-yaml 
+      - id: check-yaml

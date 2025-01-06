@@ -1,0 +1,43 @@
+formatter: markdown table
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
+
+settings:
+  lockfile: false
+  recursive: false
+  root: .
+
+content: |-
+  # Hashicorp Private Registry Demo
+
+  This module generates random pet names using the `random_pet` resource.
+
+  ## Requirements
+
+  {{ .Requirements }}
+
+  ## Inputs
+
+  {{ .Inputs }}
+
+  ## Outputs
+
+  {{ .Outputs }}
+
+  ## Example Usage
+  ```hcl
+  module "pet_names" {
+    source  = "app.terraform.io/alekc/private-registry/demo"
+    version = "0.0.1"
+    number_of_pets = 3
+  }
+
+  output "generated_names" {
+    value = module.pet_names.pet_names
+  }  ```
