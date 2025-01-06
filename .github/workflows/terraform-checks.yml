@@ -22,6 +22,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug Environment
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Git diff:"
+          git diff 
+          echo "######"
+          cat README.md
+          
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
