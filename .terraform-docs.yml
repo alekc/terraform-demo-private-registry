@@ -25,6 +25,7 @@ content: |-
   {{ .Outputs }}
 
   ## Example Usage
+  
   ```hcl
   module "pet_names" {
     source  = "app.terraform.io/alekc/private-registry/demo"
@@ -34,4 +35,5 @@ content: |-
 
   output "generated_names" {
     value = module.pet_names.pet_names
-  }  ```
+  }  
+  ```
