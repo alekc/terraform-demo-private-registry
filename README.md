@@ -43,6 +43,7 @@ This module generates random pet names using the `random_pet` resource.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_new_input"></a> [new\_input](#input\_new\_input) | New input for demo purposes | `string` | `"Hello World"` | no |
 | <a name="input_number_of_pets"></a> [number\_of\_pets](#input\_number\_of\_pets) | Number of random pet names to generate | `number` | `1` | no |
 
 ## Outputs
@@ -51,6 +52,7 @@ This module generates random pet names using the `random_pet` resource.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_new_output"></a> [new\_output](#output\_new\_output) | New input output |
 | <a name="output_pet_names"></a> [pet\_names](#output\_pet\_names) | List of generated pet names |
 
 ## Example Usage

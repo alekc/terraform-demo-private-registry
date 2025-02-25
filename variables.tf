@@ -8,3 +8,8 @@ variable "number_of_pets" {
     error_message = "Number of pets must be greater than 0"
   }
 }
+variable "new_input" {
+  description = "New input for demo purposes"
+  type        = string
+  default     = "Hello World"
+}
