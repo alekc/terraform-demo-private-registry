@@ -1,34 +1,7 @@
-# Random Pet Names Terraform Module,
-
-This module generates random pet names using the `random_pet` resource.
-
-## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 1.0.0 |
-| random | >= 3.0.0 |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| number_of_pets | Number of random pet names to generate | number | 1 | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| pet_names | List of generated pet names |
-
-## Example Usage
-
 <!-- BEGIN_TF_DOCS -->
-# Hashicorp Private Registry Demo
+Random Pet Names Terraform Module
 
 This module generates random pet names using the `random_pet` resource.
-
-## Requirements
 
 ## Requirements
 
@@ -39,14 +12,10 @@ This module generates random pet names using the `random_pet` resource.
 
 ## Inputs
 
-## Inputs
-
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_new_input"></a> [new\_input](#input\_new\_input) | New input for demo purposes | `string` | `"Hello World"` | no |
 | <a name="input_number_of_pets"></a> [number\_of\_pets](#input\_number\_of\_pets) | Number of random pet names to generate | `number` | `1` | no |
-
-## Outputs
 
 ## Outputs
 
