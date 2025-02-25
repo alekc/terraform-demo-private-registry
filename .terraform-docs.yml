@@ -14,19 +14,13 @@ settings:
   root: .
 
 content: |-
-  # Hashicorp Private Registry Demo
+  Random Pet Names Terraform Module
 
   This module generates random pet names using the `random_pet` resource.
 
-  ## Requirements
-
   {{ .Requirements }}
 
-  ## Inputs
-
   {{ .Inputs }}
-
-  ## Outputs
 
   {{ .Outputs }}
 
