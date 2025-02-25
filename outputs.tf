@@ -3,6 +3,6 @@ output "pet_names" {
   value       = random_pet.pets[*].id
 }
 output "new_output" {
-  value = var.new_input
+  value       = var.new_input
   description = "New input output"
 }

@@ -10,6 +10,6 @@ variable "number_of_pets" {
 }
 variable "new_input" {
   description = "New input for demo purposes"
-  type = string
-  default = "Hello World"
+  type        = string
+  default     = "Hello World"
 }
